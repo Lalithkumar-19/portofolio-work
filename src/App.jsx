@@ -11,7 +11,7 @@ import { WhoAmI } from './components/WhoAmI'
 function App() {
 
   return (
-      <div className='w-full flex flex-col bg-gradient-to-r from-blue-50 to-white'>
+      <div className='w-full flex flex-col bg-gradient-to-r from-blue-50 to-white overflow-x-hidden'>
         <Navbar/>
         <Hero/>
         <WhoAmI/>
