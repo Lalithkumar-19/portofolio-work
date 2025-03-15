@@ -15,13 +15,14 @@ const Hero = () => {
    
     const timer = setTimeout(() => {
       // Animation for the text content
+      
       gsap.from(textRef.current, {
         opacity: 0,
         y: 50,
         duration: 1,
         scrollTrigger: {
           trigger: textRef.current,
-          start: "top 80%", // Animation starts when the top of the element hits 80% of the viewport
+          start: "top 90%", // Animation starts when the top of the element hits 80% of the viewport
           end: "bottom 20%", // Animation ends when the bottom of the element hits 20% of the viewport
           toggleActions: "play none none reverse", // Play animation on enter, reverse on leave
         },
@@ -34,7 +35,7 @@ const Hero = () => {
         duration: 1,
         scrollTrigger: {
           trigger: imageRef.current,
-          start: "top 80%",
+          start: "top 90%",
           end: "bottom 20%",
           toggleActions: "play none none reverse",
         },
